@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>erroe</title>
+    <link rel="stylesheet" href="errorstyle.css">
+</head>
+<body>
+<p id="error">
+    لطفا نام کاربری و رمز عبور خود را وارد نمایید.توجه داشته باشید که نام کاربری می بایست شامل حداقل 8 کاراکتر بوده و از
+    عدد و یک حرف بزرگ استفاده شده باشد.
+    رمز عبور نیز می بایست حداقل شامل 6 کاراکتر بوده و از یک عدد و یک حرف بزرگ استفاده شده باشد.
+</p>
+<div id="box">
+    <div id="input1">
+        <label class="label">نام کاربری خود را واردنمایید:</label>
+        <input class="input" id="input11" type="text">
+    </div>
+
+
+    <div id="input2">
+        <label class="label">رمزعبور خود را واردنمایید:</label>
+        <input class="input" id="input12" type="password">
+    </div>
+    <div id="input2">
+        <label class="label">رمزعبور خود را تکرارنمایید:</label>
+        <input class="input" id="input13" type="password">
+    </div>
+    <div>
+        <button onclick="check()" >ثبت </button>
+    </div>
+    <p id="khata"></p>
+
+
+</div>
+
+<script type="text/javascript">
+    function check() {
+        var name=document.getElementById("input11").value;
+        var password=document.getElementById("input12").value;
+        var password2=document.getElementById("input13").value;
+        var errormesage=document.getElementById("khata");
+        var errortothrow="";
+        try {
+            if(name.length<8){
+                errortothrow+="</br> عبور می بایست حداقل 8 کاراکتر باشد";
+            }
+            if(/[A-Z]/g.test(name)==false){
+                errortothrow+="</br>نام عبور می بایست حداقل 8 کاراکتر باشد";
+            }
+            if(/[1-9]/g.test(name)==false){
+                errortothrow+="</br>نام عبور می بایست حداقل دارای1عدد کاراکتر باشد";
+            }
+        }
+catch (err) {
+    errormesage.innerHTML=errortothrow;
+}
+    }
+
+
+
+</script>
+
+</body>
+</html>

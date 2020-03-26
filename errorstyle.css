@@ -1,0 +1,16 @@
+#error{
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 30px 30px 10px 30px;
+}
+#box{
+    border: solid greenyellow 4px;
+    background-color: #8b8352;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+
+}
+.

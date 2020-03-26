@@ -1,0 +1,22 @@
+#div{
+    width: 400px;
+    height: 600px;
+    border: solid 3px red;
+    border-color: greenyellow;
+    background-color: lightgray;
+    margin: 100px;
+    padding: 90px;
+}
+
+#paragraph {
+    color: #3734e2;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Tahoma;
+    fill-opacity: 0.7;
+    text-align: justify;
+    text-shadow: green;
+    
+
+
+}
